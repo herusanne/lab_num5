@@ -1,0 +1,22 @@
+.table-view {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table-view .column-header-background {
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-alignment: center;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="800.0" style="-fx-background-color: #2A0033;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lesson5.lab_num5.controllers.MainController">
+    <children>
+        <Pane layoutX="110.0" layoutY="128.0" prefHeight="96.0" prefWidth="580.0">
+            <children>
+                <Button fx:id="requestBtn" layoutX="193.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#changeWindowToTable" prefHeight="59.0" prefWidth="194.0" style="-fx-background-color: #fcbb31;" text="Send request" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </Pane>
+        <Pane layoutX="10.0" layoutY="8.0" prefHeight="70.0" prefWidth="780.0">
+            <children>
+                <Label layoutX="200.0" text="Currency Fetcher" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                </Label>
+                <Button layoutX="764.0" layoutY="-7.0" mnemonicParsing="false" onMouseClicked="#onExitButtonClick" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </Pane>
+        <Separator layoutX="250.0" layoutY="85.0" opacity="0.45" prefWidth="300.0" />
+    </children>
+</AnchorPane>

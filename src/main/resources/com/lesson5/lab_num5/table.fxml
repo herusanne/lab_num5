@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #2A0033;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lesson5.lab_num5.controllers.TableController">
+    <children>
+        <Pane layoutX="10.0" layoutY="8.0" prefHeight="70.0" prefWidth="985.0">
+            <children>
+                <Label layoutX="302.0" text="Currency Fetcher" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                </Label>
+                <Button layoutX="958.0" layoutY="-7.0" mnemonicParsing="false" onMouseClicked="#onExitButtonClick" style="-fx-background-color: transparent;" text="X" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </Pane>
+        <Separator layoutX="353.0" layoutY="77.0" opacity="0.45" prefWidth="300.0" />
+        <Pane layoutY="97.0" prefHeight="700.0" prefWidth="1000.0">
+            <children>
+                <TableView fx:id="tableView" layoutX="-1.0" layoutY="6.0" prefHeight="700.0" prefWidth="1000.0" stylesheets="@css/table.css">
+                    <columns>
+                        <TableColumn fx:id="ccy" prefWidth="250" text="CCY" />
+                        <TableColumn fx:id="baseCcy" prefWidth="250" text="BASE CCY" />
+                        <TableColumn fx:id="buy" prefWidth="250" text="BUY" />
+                        <TableColumn fx:id="sale" prefWidth="250" text="SALE" />
+                    </columns>
+                </TableView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
