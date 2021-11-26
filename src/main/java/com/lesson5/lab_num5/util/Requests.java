@@ -1,8 +1,11 @@
 package com.lesson5.lab_num5.util;
 
+import javafx.scene.control.Alert;
+
 import java.io.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 
 public class Requests extends Thread {
     public String jsonIn;
@@ -42,7 +45,10 @@ public class Requests extends Thread {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-
+        if (jsonIn.equals("")) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "Invalid URL");
+             alert.show();
+        }
         return jsonIn;
     }
 

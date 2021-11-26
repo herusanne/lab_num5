@@ -52,6 +52,10 @@ public class SceneLoader {
         System.out.println("[Waiting for data...]");
         String json = requests.jsonIn;
 
+        if (json.equals("")) {
+            return new ArrayList<>();
+        }
+
         Object obj = null;
         try {
             obj = new JSONParser().parse(json);

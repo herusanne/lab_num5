@@ -18,7 +18,7 @@ public class Main extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.initStyle(StageStyle.UNDECORATED);
-        stage.setResizable(false);
+        //stage.setResizable(false);
 
         scene.setOnMousePressed(event -> {
             x = event.getSceneX();
